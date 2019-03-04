@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<title>Cynthia Aguilar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="styles/index_style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/index.js"></script>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CYNTHIA AGUILAR <!-- <span class="w3-hide-small">WEBSITE</span> LOGO --> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em> UX Designer by day, Bowler by night</em></p>
+  <p> Hello! I am a senior undergraduate student at the University of California, Irvine where I am double majoring in Informatics with a specialization in Human-Computer Interaction, and Linguistics. 
+    My experiences at UCI have sparked my passion for UX Design and front-end development, which I hope to pursue after I graduate. I want to be able to create clean and accessible designs that can 
+    be universally beneficial. I take everyday as a learning opportunity and am excited to find something that will allow me to grow both personally and professionally. </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Cynthia Aguilar</b></p><br>
+      <img src="images/portrait.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> <em> My Hobbies  </em><br> I love to bowl and will most likely be spotted at the local bowling alley most weekends. My love of languages has inspired me to study linguistics, as well as learning other languages on my own time. 
+          <br><br> I strive to live my life by the following quote: <br>
+         <em> "You miss 100% of the shots you don't take -Wayne Gretzky" </em> <br> - Michael Scott </p>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-32 w3-center">
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">VIEW MY RESUME</button>
+  </div>
+ 
+</div> 
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest projects.<br></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/thuuzlogo.png" style="width:100%" onclick="onClick(this,'img01','modal01','caption')" class="w3-hover-opacity" alt="Thuuz Sports Logo">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/ochslogo.png" style="width:100%" onclick="onClick(this,'img02','modal02','caption2')" class="w3-hover-opacity" alt="OC Head Start Logo">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/mochithingslogo.png" style="width:100%" onclick="onClick(this, 'img03', 'modal03', 'caption3')" class="w3-hover-opacity" alt="mochithings Logo">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/NewsXRay.png" style="width:50%" onclick="onClick(this, 'img04', 'modal04','caption4')" class="w3-hover-opacity" alt="News X-Ray Screenshot">
+    </div> 
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <img src="images/Sustainify.png" style="width:50%" onclick="onClick(this, 'img05', 'modal05','caption5')" class="w3-hover-opacity" alt="Sustainify Screenshot">
+    </div> 
+  </div>
+
+</div> 
+
+<!-- MODAL CONTENT FOR THUUZ -->
+<div id="modal01" class="w3-modal w3-white" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent">
+    <h3 class="w3-center"> OVERVIEW </h3>
+    <div class="w3-modal-content w3-col m4 w3-padding-32">
+      <p><b> ROLE </b></p> <br>
+      <img src="images/role.png" style="width:25%" alt="Picture of Woman Icon">
+      <p><em> UI Designer & UX Researcher </em></p>
+    </div>
+
+    <div class="w3-col m4 w3-padding-32">
+        <p><b> TASK </b></p> <br>
+        <img src="images/task.png" style="width:25%" alt="Picture of Clipboard">
+        <p><em> Classroom project to redesign an existing app using evidence-based design and UX research methodologies. </em></p>      
+    </div>
+
+    <div class="w3-col m4 w3-padding-32">
+        <p><b> DURATION </b></p> <br>
+        <img src="images/calendar.png" style="width:25%" alt="Picture of Calendar Icon">
+        <p><em> April 2018 to June 2018 (10 weeks) </em></p> <br>      
+    </div>
+  </div>
+
+  <div id="overviewContainer">
+    <div class="w3-row w3-center w3-section">
+      <h3 class="w3-center"> THE APP: THUUZ SPORTS </h3>
+      <p class="w3-center"> Thuuz is a mobile sports application that provides its users with game statistics and highlights of 
+        their favorite sports. However, the app differentiantes itself from its competitors with an unique algorithm that determines
+        the excitement of games and ranks them based on a numerical scale from 0-100. Although it is a promising feature, 
+        it is unfortunately masked by the various usability issues found through user research our team conducted.</p>
+    </div>
+  </div>
+
+  
+
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> USABILITY ISSUES </h3>
+    <div class="w3-modal-content w3-padding-32">
+      <p><em> <b>Information Overload </b></em></p>
+      <img src="images/InformationOverload.png" style="width: 100%" alt="Usability Issue">
+      <p> Users were confused and overwhelmed with the amount of information being presented. For example, too many games were displayed at once. </p>
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <p><em> <b> Bad Use of Color & Font </b> </em></p>
+      <img src="images/BadUseScreens.png" style="width: 100%" alt="Usability Issue">
+      <p> Users had a hard time with the representation of buttons and fonts. This disabled users to find buttons for the actions they were looking for. </p>
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <p><em><b> Counter-Intuitive Navigation </b></em></p>
+      <img src="images/CIntuitive.png" style="width: 100%" alt="Usability Issue">
+      <p> The navigation of the app has several aspects that are counter-intuitive and do not follow industry standards, which caused confusion in our users. 
+        No clear indication of swiping left or right for date navigation, indicators were hard to see. Inconsistent labels and formats for dates. One screen 
+        displayed "Later Today" while the next displayed "12/31" as an example. </p>
+    </div>
+    
+    <div class="w3-modal-content w3-padding-32">
+      <p><em> <b>Confusion of Excitement Score </b></em></p>
+      <img src="images/ExcitementScoreScreens.png" style="width: 100%" alt="Usability Issue">
+      <p> Users did not find the excitement score easily and questioned the purpose of it. This is significant because the excitement score is the feature 
+          that sets it apart from other competitors, yet it is muddled by all the present usability issues. Furthermore, our users could not find additional
+          information in the game page that explained the match's current excitement score. </p>
+    </div>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> PROTOTYPES </h3>
+    <div class="w3-modal-content w3-padding-32">
+      <img src="images/homePagePrototypes.png" style="width: 100%" alt="Usability Issue">
+      <p> Home page with a better visual display of the calendar and saved team information. </p>
+
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <img src="images/gameInfoPrototypes.png" style="width: 100%" alt="Usability Issue">
+      <p> Game Information pages re-imagined with direct access to "check-in" feature. </p>
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <img src="images/searchPrototypes.png" style="width: 100%" alt="Usability Issue">
+      <p> New search feature that would allow the user to quickly look for sports teams/leagues. </p>
+    </div>
+
+    <div class="w3-modal-content w3-center w3-transparent w3-padding-32">
+      <video controls id="thuuzVideo">
+          <source src="images/SignUpPrototype.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> OUR REDESIGN </h3>
+
+    <div class="w3-modal-content w3-padding-32">
+      <p><em><b> Present the Right Information </b></em></p>
+      <img class="w3-image designImage" src="images/feedScreen.png" alt="Picture of Feed Screen">
+      <p> The original design crowded too much information within the homepage. Our new design separates and prioritizes information. This allows users to 
+      find what they're looking for almost immediately. In addition, we added an universal search functionality, which also allows users to make searches 
+      and a filter option in which they can choose what information they want to see on their feed. </p>
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <p><em><b> Make Navigation Clear & Simple</b></em></p>
+      <img class="w3-image designImage" src="images/infoScreen.png" alt="Picture of Information Screen">
+      <p> We created a vertical pop-up menu which the user can access at all times by clicking the T bubble at the bottom right corner. </p>
+    </div>
+
+    <div class="w3-modal-content w3-padding-32">
+      <p><em><b> Emphasize Excitement Score</b> </em></p>
+      <img class="w3-image designImage" src="images/scoreScreen.png" alt="Picture of Score Screen">
+      <p> We created a chart that improves the display of the excitement score calculated throughout the game. Users would now be able to better understand 
+        the score and how it fits with the game they are watching. </p>
+    </div>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+      <h3 class="w3-center"> INSPIRATIONS </h3>
+      <img class="w3-image" src="images/Inspiration.png" style="width: 100%" alt="Usability Issue">
+      <p> We adhered to Nielsen's Heuristics when designing the new interface and took inspiration from the following applications: Tumblr, and the App Store (iOS).
+         Tumblr has a quick and easy-to-use, pop-up navigation for posting content which users can access any time. The App Store displays its content through the
+          use of card-like tiles which present information in a clear and minimal way. </p>
+
+  </div>
+</div>
+
+
+<!-- MODAL CONTENT FOR OC HEAD START -->
+<div id="modal02" class="w3-modal w3-white" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img02" class="w3-image">
+    <p id="caption2" class="w3-opacity w3-large"></p>
+  </div> 
+  
+  <div class="w3-modal-content w3-center w3-transparent">
+      <h3 class="w3-center"> OVERVIEW </h3>
+      <div class="w3-modal-content w3-col m4 w3-padding-32">
+        <p><b> ROLE </b></p> <br>
+        <img src="images/role.png" style="width:25%" alt="Picture of Woman Icon">
+        <p><em> Business Analyst, Front-End Developer, UI Designer </em></p>
+      </div>
+  
+      <div class="w3-col m4 w3-padding-32">
+          <p><b> TASK </b></p> <br>
+          <img src="images/task.png" style="width:25%" alt="Picture of Clipboard">
+          <p><em> Classroom project to create working software for a sponsor of our choice in an agile environment. </em></p>      
+      </div>
+  
+      <div class="w3-col m4 w3-padding-32">
+          <p><b> DURATION </b></p> <br>
+          <img src="images/calendar.png" style="width:25%" alt="Picture of Calendar Icon">
+          <p><em> April 2018 to June 2018 (10 weeks) </em></p> <br>      
+      </div>
+    </div>
+  
+    <div id="overviewContainer">
+      <div class="w3-row w3-center w3-section">
+        <h3 class="w3-center"> THE SPONSOR: OC HEAD START </h3>
+        <p class="w3-center"> Our sponsor is a non-profit organization dedicated to serving at-risk families in Orange County. Their purpose is to provide these families support,
+            by enrolling kids in head start programs and empowering the parents by providing them tools to ensure the success of their children</p>
+      </div>
+    </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> THE PROBLEM </h3>
+    <p>The application process for the program acts like a black-box; parents could not see their application status or know which document forms they needed
+        to submit. As a result, the centers would be flooded with calls and staff members often had to work long hours to update applications manually. In
+        addition, our sponsor informed us that some of the families were having difficulty finding OC Head Start offices to submit their paperwork to.</p>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> OUR SOLUTION </h3>
+    <p>To create a website which informs parents of their current application status. This would allow parents to know which forms they have submitted, as well 
+      as any other form they may be missing. In addition, we wanted to display a map in the website, in which parents could look up which center is closest to 
+      their current location. </p>
+  </div>
+
+  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+    <h3 class="w3-center"> THE PROCESS </h3>
+    <div class="w3-modal-content w3-padding-32">
+        <p><em> <b> Requirements Elicitation </b></em></p>
+        <img src="images/reqselicitation.png" style="width: 100%" alt="Picture of requirements document">
+        <p> As a team, we regularly met with our sponsor to gather requirements necessary for the construction of our website. Because we were tasked to simulate 
+          an Agile environment, this made it easy to have room for flexibility in the requirements. I was in charge of creating and overseeing the development of 
+          the System Requirements Document. I decided to use the IEEE 830-1998 template since it met our needs and fit well with the context of the project. </p>
+      </div>
+  
+      <div class="w3-modal-content w3-padding-32">
+        <p><em> <b> Prototyping </b> </em></p>
+        <div class="w3-center w3-padding-16">
+          <img src="images/prototype.jpg" style="width: 100%" alt="Picture of prototyping screens">
+        </div>
+
+        <div class="w3-center w3-padding-16">
+          <img src="images/coral.png" style="width: 100%" alt="Picture of prototyping screens">
+        </div>
+
+        <div class="w3-center w3-padding-16">
+          <img src="images/login2.png" style="width: 100%" alt="Picture of prototyping screens">
+        </div>
+
+        <div class="w3-center w3-padding-16">
+          <img src="images/login3.PNG" style="width: 100%" alt="Picture of prototyping screens">
+        </div>
+      </div>
+  
+      <div class="w3-modal-content w3-padding-32">
+        <p><em><b> Explanation </b></em></p>
+        <p> Incremental design of our high-fidelity prototype. The styles changed as we gathered more information from our sponsor, so that it reflected the mission
+            of the website. I was in charge of adding functionality to the pages by using PHP and MySQL. I was also in charge of developing the document display where
+            parents can see what documents they are missing. This information was extracted using SQL queries from the database our team developed. </p>
+      </div>
+
+    </div>
+
+    <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
+      <h3 class="w3-center"> FINAL PRODUCT </h3>
+      <p>Although we faced some limitations due to government regulations on non-profit organizations, we were able to create something that followed their rules and that 
+        could potentially resolve the influx of calls.</p>
+
+      <video controls>
+        <source src="images/HeadStartWebsite.mp4">
+      </video>
+
+    </div>
+</div>
+
+<!-- MODAL CONTENT FOR MOCHI THINGS REDESIGN -->
+<div id="modal03" class="w3-modal w3-white" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img03" class="w3-image">
+      <p id="caption3" class="w3-opacity w3-large"></p>
+  
+      <h3 class="w3-center"> OVERVIEW </h3>
+    </div>
+</div>
+
+
+<!-- MODAL CONTENT FOR NEWS X-RAY -->
+<div id="modal04" class="w3-modal w3-white" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img04" class="w3-image">
+      <p id="caption4" class="w3-opacity w3-large"></p>
+  
+      <h3 class="w3-center"> IN PROGRESS </h3>
+    </div>
+</div>
+
+<!-- MODAL CONTENT FOR SUSTAINIFY -->
+<div id="modal05" class="w3-modal w3-white" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img05" class="w3-image">
+      <p id="caption5" class="w3-opacity w3-large"></p>
+  
+      <h3 class="w3-center"> IN PROGRESS </h3>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT ME</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="images/irvine.jpg" class="w3-image w3-round" style="width:100%">
+      <p class="w3-center"><em>Image citation: “Irvine Property Management.” Pinnacle, pinnacleliving.com/irvine-property-management/.</em></p>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Irvine, CA, US<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: cnaguila@uci.edu<br>
+      </div>
+      <p>Feel free to contact me:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://www.linkedin.com/in/cynthia-aguilar-0a37b317a/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+</body>
+</html>
