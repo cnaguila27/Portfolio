@@ -20,9 +20,7 @@ video {
   height: auto;
 }
 
-#roleImage {
-  display: block;
-}
+
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -78,6 +76,12 @@ video {
   #overviewContainer {
   margin-left: 25px;
   margin-right: 25px;
-}
+  }
+  
+  #roleImage {
+    display: block;
+    margin-left: auto;
+  
+  }
 
 }
