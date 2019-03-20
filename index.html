@@ -64,10 +64,9 @@
   </div>
 
   <div class="w3-content w3-container w3-padding-32 w3-center">
-      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"> <a href="images/my-resume.pdf" target="_blank">VIEW MY RESUME</a></button>
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">VIEW MY RESUME</button>
   </div>
  
-  
 </div> 
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -93,20 +92,24 @@
     </div>
 
     <div class="w3-col m3">
+      <img src="images/Sustainify.png" style="width:50%" onclick="onClick(this, 'img05', 'modal05','caption5')" class="w3-hover-opacity" alt="Sustainify Screenshot">
+    </div> 
+
+    <!-- <div class="w3-col m3">
       <img src="images/mochithingslogo.png" style="width:100%" onclick="onClick(this, 'img03', 'modal03', 'caption3')" class="w3-hover-opacity" alt="mochithings Logo">
-    </div>
+    </div> -->
 
-    <div class="w3-col m3">
-      <img src="images/NewsXRay.png" style="width:100%" onclick="onClick(this, 'img04', 'modal04','caption4')" class="w3-hover-opacity" alt="News X-Ray Screenshot">
-    </div> 
+    <!-- <div class="w3-col m3">
+      <img src="images/NewsXRay.png" style="width:50%" onclick="onClick(this, 'img04', 'modal04','caption4')" class="w3-hover-opacity" alt="News X-Ray Screenshot">
+    </div>  -->
 
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
+  <!-- <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-        <img src="images/Sustainify.png" style="width:100%" onclick="onClick(this, 'img05', 'modal05','caption5')" class="w3-hover-opacity" alt="Sustainify Screenshot">
+        <img src="images/Sustainify.png" style="width:50%" onclick="onClick(this, 'img05', 'modal05','caption5')" class="w3-hover-opacity" alt="Sustainify Screenshot">
     </div> 
-  </div>
+  </div> -->
 
 </div> 
 
@@ -120,7 +123,7 @@
 
   <div class="w3-modal-content w3-center w3-transparent">
     <h3 class="w3-center"> OVERVIEW </h3>
-    <div class="w3-col m4 w3-padding-32">
+    <div class="w3-modal-content w3-col m4 w3-padding-32">
       <p><b> ROLE </b></p> <br>
       <img src="images/role.png" style="width:25%" alt="Picture of Woman Icon">
       <p><em> UI Designer & UX Researcher </em></p>
@@ -184,7 +187,7 @@
   </div>
 
   <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
-    <h3 class="w3-center"> MOCKUPS </h3>
+    <h3 class="w3-center"> PROTOTYPES </h3>
     <div class="w3-modal-content w3-padding-32">
       <img src="images/homePagePrototypes.png" style="width: 100%" alt="Usability Issue">
       <p> Home page with a better visual display of the calendar and saved team information. </p>
@@ -253,7 +256,7 @@
   </div> 
   
   <div class="w3-modal-content w3-center w3-transparent">
-      <h3 class="w3-center"> OVERVIEW </h3>
+      <h3 class="w3-center w3-jumbo"> OVERVIEW </h3>
       <div class="w3-modal-content w3-col m4 w3-padding-32">
         <p><b> ROLE </b></p> <br>
         <img src="images/role.png" style="width:25%" alt="Picture of Woman Icon">
@@ -346,100 +349,27 @@
 </div>
 
 <!-- MODAL CONTENT FOR MOCHI THINGS REDESIGN -->
-<div id="modal03" class="w3-modal w3-white" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img03" class="w3-image">
-    <p id="caption3" class="w3-opacity w3-large"></p>
-  </div>
-
-  <div class="w3-modal-content w3-center w3-transparent">
-    <h3 class="w3-center"> OVERVIEW </h3>
-    <p class="w3-center"> As a long time lover of stationery products and cute stuff, I often visit the website mochithings to browse
-      through their merch. However, I realized some aspects of the website are frustrating and make it hard to view products. I took it 
-      upon myself to redesign some aspects of their website with my knowledge in UX to create a better experience. 
-    </p>
-  </div>
-
-  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
-    <h3 class="w3-center"> USABILITY ISSUES </h3>
-
-    <div class="w3-modal-content w3-padding-32">
-      <h3> Image Display </h3>
-      <!-- MAYBE GIF HERE -->
-      <img class="w3-center" src="images/infoDisplay.gif" style="width: 100%" alt="gif of website">
-      <p> When an user is on the product page, they are forced to scroll through all the product images before the user can view 
-        any product information or even the rest of the page. This is not much of a problem with products that have fewer images. However,
-        this is not the case for products with several images. Furthermore, the pictures are not organized by the product style. </p>
+<!-- <div id="modal03" class="w3-modal w3-white" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img03" class="w3-image">
+      <p id="caption3" class="w3-opacity w3-large"></p>
+  
+      <h3 class="w3-center"> OVERVIEW </h3>
     </div>
-
-    
-    <div class="w3-modal-content w3-padding-32">
-        <h3> Lack of Feedback </h3>
-        <!-- MAYBE GIF HERE -->
-        <img class="w3-center" src="images/lackFeedback.gif" style="width: 100%" alt="gif of website">
-        <p> When an user selects a product style, the website does not offer any type of feedback that would help the user see their selection. 
-          The images do not change to reflect the chosen style. Not only is the user not able to see their selection, but it hinders their ability to
-        even see the correct product style. </p>
-    </div>
-
-
-    <div class="w3-modal-content w3-padding-32">
-      <h3> Redudant/Empty Categories </h3>
-      <!-- IMAGE OF CATEGORIES -->
-      <img class="w3-center" src="images/categories.gif" style="width: 100%" alt="gif of website">
-      <p> The website has an overwhelming amount of categories on the Home & Office section that could be separated or be removed. Some of the subcategories
-        are empty and do not have any product listings. Other subcategories can also be absorbed into other existing categories that would better represent
-        the product. </p>
-    </div>
-  </div>
-
-
-  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
-    <h3 class="w3-center"> WIREFRAMES </h3>
-    <div class="w3-modal-content w3-padding-32">
-      <img src="images/mochiWebsite.JPG" style="width: 100%" alt="Wireframe of website">
-      <p> Product page with improved image display on the desktop version of the website. </p>
-    </div>
-
-    <div class="w3-modal-content w3-padding-32">
-      <img src="images/mochiApp.JPG" style="width: 50%" alt="Wireframe of website">
-      <p> Product page with improved image display on the mobile version of the website. </p>
-    </div>
-  </div>
-
-  <div class="w3-modal-content w3-center w3-transparent w3-padding-64">
-    <h3 class="w3-center"> PROTOTYPES </h3>
-    <div class="w3-modal-content w3-padding-32">
-      <!-- DESKTOP VIDEO HERE -->
-      <h3> Improved Image Display & Feedback </h3>
-      <img src="images/improvedDisplay.gif" style="width: 100%" alt="GIF of prototype">
-      <p> Users now have the freedom to scroll through the product images without being forced to scroll through them all. The user is 
-        also now able to receive feedback on their action. As seen in the GIF, when the user clicks the Banana Ball style, the proper product pictures
-        appear on the display. </p>
-    </div>
-
-    <div class="w3-modal-content w3-padding-32">
-      <!-- MOBILE VIDEO HERE-->
-      <p> </p>
-    </div>
-  </div>
-
-
-
-</div>
+</div> -->
 
 
 <!-- MODAL CONTENT FOR NEWS X-RAY -->
-<div id="modal04" class="w3-modal w3-white" onclick="this.style.display='none'">
+<!-- <div id="modal04" class="w3-modal w3-white" onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img04" class="w3-image">
       <p id="caption4" class="w3-opacity w3-large"></p>
   
-      <h3 class="w3-center"> IN PROGRESS -- TO BE COMPLETED JUNE 2019 </h3>
+      <h3 class="w3-center"> IN PROGRESS </h3>
     </div>
-</div>
+</div> -->
 
 <!-- MODAL CONTENT FOR SUSTAINIFY -->
 <div id="modal05" class="w3-modal w3-white" onclick="this.style.display='none'">
@@ -448,7 +378,7 @@
       <img id="img05" class="w3-image">
       <p id="caption5" class="w3-opacity w3-large"></p>
   
-      <h3 class="w3-center"> IN PROGRESS -- TO BE COMPLETED MARCH 2019 </h3>
+      <h3 class="w3-center"> IN PROGRESS </h3>
     </div>
 </div>
 
@@ -474,7 +404,7 @@
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Irvine, CA, US<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: cnaguila@uci.edu<br>
       </div>
-      <!-- <p>Feel free to contact me:</p>
+      <p>Feel free to contact me:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -488,7 +418,7 @@
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form> -->
+      </form>
     </div>
   </div>
 </div>
@@ -502,12 +432,10 @@
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i> -->
-    <a href="www.linkedin.com/in/cnaguila27" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/cynthia-aguilar-0a37b317a/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 </body>
 </html>
-
-
